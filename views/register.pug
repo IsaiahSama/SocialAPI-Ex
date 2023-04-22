@@ -1,0 +1,27 @@
+extends layout 
+
+block preBody
+    link(rel="stylesheet", href="/stylesheets/login.css")
+    title SocialEx - Register
+
+block content
+    center 
+        h1 Welcome to Social Ex
+    .container
+        .content
+            h2 Register
+            form(action="/user/create/" method="POST")
+                div 
+                    label.form-label(for="testemail") Email:
+                    input#email(type="email", name="testemail")
+                div 
+                    label.form-label(for="password") Password:
+                    input#password(type="password", name="password") 
+                div 
+                    label.form-label(for="passwordAgain") Password Again:
+                    input#passwordAgain(type="password", name="passwordAgain") 
+                div
+                    button#submit.btn(type="submit") Register
+            hr 
+            button.btn
+                a(href="/login/") Log in

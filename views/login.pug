@@ -5,7 +5,7 @@ block preBody
     title SocialEx - Login
 block content
     center 
-        h1 Welcome to Social Ex
+        h1 Welcome back to Social Ex
     .container
         .content
             h2 Login
@@ -17,4 +17,7 @@ block content
                     label.form-label(for="password") Password:
                     input#password(type="password", name="password") 
                 div
-                    button#submit(type="submit") Log In
+                    button#submit.btn(type="submit") Log In
+            hr 
+            button.btn
+                a(href="/login/register") Register
