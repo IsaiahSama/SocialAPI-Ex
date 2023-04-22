@@ -9,12 +9,12 @@ block content
     .container
         .content
             h2 Login
-            form(action="")
+            form(action="/user/create/" method="POST")
                 div 
-                    label.form-label(for="email") Email:
-                    input#email(type="email", name="email")
+                    label.form-label(for="testemail") Email:
+                    input#email(type="email", name="testemail")
                 div 
-                    label.form-label(for="current-password") Password:
-                    input#current-password(type="current-password", name="current-password") 
+                    label.form-label(for="password") Password:
+                    input#password(type="password", name="password") 
                 div
                     button#submit(type="submit") Log In
