@@ -27,6 +27,7 @@ router.get("/getposts/:userID/", (req, res) => {
 // Posters
 router.post("/create/", (req, res, next) => {
   console.log("Creates user in here.");
+  res.redirect("../../");
 });
 
 // Putters
