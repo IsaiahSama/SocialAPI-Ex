@@ -1,4 +1,18 @@
-extends layout
-
-block content
-
+mixin post(userImage, userName, postTime, postTitle, postImg, postText)
+    .postcard 
+        .postheader 
+            .userimage
+                img(src=userImage, alt="User Profile")
+            .username
+                p=userName
+            .postTime
+                p=postTime
+        .postTitle
+            p=postTitle
+        .postbody 
+            .postimg
+                if (postImg)
+                    img(src=postImg, alt="post image")
+                
+            .postText 
+                p=postText
