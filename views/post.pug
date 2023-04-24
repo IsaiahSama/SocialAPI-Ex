@@ -12,9 +12,20 @@ mixin post(userImage, userName, postTime, postTitle, postImg, postText)
         .postTitle
             p=postTitle
         .postbody 
-            .postimg
-                if (postImg)
-                    img(src=postImg, alt="post image")
-                
-            .postText 
-                p=postText
+            .postcontent
+                .postimg
+                    if (postImg)
+                        img(src=postImg, alt="post image")
+                        hr
+                .postText 
+                    p=postText
+            .postfeatures
+                .like
+                    button
+                        img(src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png", alt="")
+                .comment
+                    button
+                        img(src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png ")
+                .follow
+                    button
+                        img(src="https://cdn-icons-png.flaticon.com/512/3683/3683218.png ", alt="")

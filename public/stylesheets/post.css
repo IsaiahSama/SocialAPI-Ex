@@ -40,28 +40,58 @@
 }
 
 .postbody {
-  max-height: 80vh;
-  scroll-behavior: smooth;
+  max-height: 85vh;
   max-width: 100%;
+  display: flex;
+}
+
+.postcontent {
+  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
+  scroll-behavior: smooth;
 }
 
 .postimg {
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
 }
 
 .postimg > img {
   object-fit: contain;
   max-width: 500px;
-  max-height: 500px;
+}
+
+.postimg > hr {
+  margin: 5px 0px;
 }
 
 .postText {
   overflow-y: scroll;
   max-height: 20vh;
   text-indent: 10px;
+}
+
+.postfeatures {
+  display: flex;
+  flex-direction: column;
+}
+
+.postfeatures > div {
+  margin: 10px 0px;
+}
+
+.postfeatures img {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.postfeatures button:hover {
+  background-color: rgb(251, 212, 139);
+  transform: scale(1.1);
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) ease-in-out;
 }
